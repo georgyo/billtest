@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app:
-    build: ./
+    build: ./app/
     restart: unless-stopped
   caddy:
     image: caddy:latest
@@ -17,5 +17,4 @@ services:
 
 volumes:
   caddy_data:
-    external: true
   caddy_config:
